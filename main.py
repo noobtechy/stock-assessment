@@ -56,24 +56,6 @@ def calculate_margin_and_premium(data: pd.DataFrame) -> pd.DataFrame:
     # Initialize columns for margin_required and premium_earned
     margin_required_list = []
     premium_earned_list = []
-
-    # Prepare payload for margin calculation
-    instruments_payload = []
-    
-    # Gather payload for all instruments
-    for index, row in data.iterrows():
-        instruments_payload.append({
-            "instrument_key": row["instrument_key"],
-            "quantity": lot_size,  # Set the quantity based on lot size
-            "transaction_type": "SELL",  # Assuming we're selling
-            "product": "D",  # Delivery or product type
-            "price": row["bid/ask"]
-        })
-
-    # Prepare the final payload for the API request
-    final_payload = {
-        "instruments": instruments_payload
-    }
     
     for index, row in data.iterrows():
         transaction_type = "SELL"  # Assuming we are calculating margin for sell positions

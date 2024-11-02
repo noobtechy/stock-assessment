@@ -3,7 +3,7 @@ import requests
 import urllib.parse
 import dotenv
 
-dotenv.load_dotenv()
+dotenv.load_dotenv(override=True)
 
 # Define the parameters
 client_id = os.getenv("CLIENT_ID")

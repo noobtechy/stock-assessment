@@ -3,7 +3,7 @@ import requests
 import os
 import dotenv
 
-dotenv.load_dotenv()
+dotenv.load_dotenv(override=True)
 
 access_token = os.getenv("ACCESS_TOKEN")
 # Define the first function to fetch option chain data

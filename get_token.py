@@ -3,7 +3,7 @@ import requests
 import dotenv
 
 
-dotenv.load_dotenv()
+dotenv.load_dotenv(override=True)
 
 url = 'https://api.upstox.com/v2/login/authorization/token'
 headers = {

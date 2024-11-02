@@ -4,11 +4,11 @@ This document provides an overview of a Python script designed to fetch option c
 ---
 
 ## **Table of Contents**
-1. [Introduction](#introduction)
-2. [Dependencies](#dependencies)
-3. [Authentication](#authentication)
-4. [Fetching Option Chain Data](#fetching-option-chain-data)
-5. [Calculating Margin and Premium](#calculating-margin-and-premium)
+1. [Introduction](#1-introduction)
+2. [Dependencies](#2-dependencies)
+3. [Authentication](#3-authentication)
+4. [Fetching Option Chain Data](#4-fetching-option-chain-data)
+5. [Calculating Margin and Premium](#5-calculating-margin-and-premium)
 
 ---
 

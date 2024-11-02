@@ -116,7 +116,7 @@ if __name__ == "__main__":
     # Fetch option chain data
     option_data = get_option_chain_data(instrument_name, expiry_date, side)
     print("Option Chain Data:")
-    # print(option_data)
+    print(option_data)
 
     # Calculate margin and premium
     final_data = calculate_margin_and_premium(option_data)
